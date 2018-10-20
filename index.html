@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Token Balance</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- <script src="web3.min.js"></script> -->
+    <script src="bundle.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron" style="width: 40%;margin:auto;margin-top: 5%; text-align: center">
+            <div style="margin-bottom: 5%">
+                <h4>Breeze Coin wallet</h4>
+
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3" style="width: 200px">Enter Your Private Key</span>
+                </div>
+                <input type="text" id="privKey" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3" style="width: 200px">Enter Receiving Address</span>
+                </div>
+                <input type="text" id="recevingAddress" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3" style="width: 200px">Enter Token Amount</span>
+                </div>
+                <input type="text" id="tokenAmount" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <button type="button" id="tranferTokens" class="btn btn-info">Transfer!</button>
+
+            <div style="margin-top: 10%">
+                <div style="margin:auto;display:none" class="loader"></div>
+            </div>
+
+            <div style="margin-top: 5%">
+                <p id="loaderText"></p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="functions.js"></script>
+
+</body>
+
+</html>

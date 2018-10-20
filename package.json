@@ -1,0 +1,27 @@
+{
+  "name": "bennny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "big-number": "^1.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "ethereumjs-tx": "^1.3.7",
+    "ethereumjs-wallet": "^0.6.2",
+    "ethers": "^4.0.0-beta.14",
+    "express": "^4.16.3",
+    "https": "^1.0.0",
+    "truffle-hdwallet-provider-privkey": "^0.3.0",
+    "web3": "^1.0.0-beta.36"
+  }
+}
