@@ -35,9 +35,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "index.html"));
-// });
+app.get("/", (req, res) => {
+  res.send("Hello, World")
+});
 
 app.post("/sendFee", async (req, res) => {
   const { address, cost, hexSTX, tokens, receivingAddress, TxData } = req.body;
